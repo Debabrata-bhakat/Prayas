@@ -72,7 +72,7 @@
           <!-- <li><a href="center.html">Centers</a></li> -->
           <!-- <li><a href="networkpage.html">Our Network</a></li> -->
           <li><a href="members.html">Members</a></li>
-          <li><a href="#footer">Support Us</a></li>
+          <!-- <li><a href="#footer">Support Us</a></li> -->
           <li><a href="https://www.gyws.org/">GYWS</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -93,13 +93,20 @@
                     <header class="section-header"><h3>About US</h3></header>
                 </center> -->
         <div class="welcome-content col-12 col-md-6">
-          <h1>Successful Business</h1>
+          <h1>Social Enterprise</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a
           </p>
-          <button class="btn btn-success">Know More</button>
+          <button id="welcomeBtn" class="btn btn-success">Know More</button>
+          <script>
+            $('#welcomeBtn').click(function (e) {
+              $('html, body').animate({
+                  scrollTop: ($('#missionAndVission').offset().top-100)
+              }, 700);
+          });
+          </script>
         </div>
         <div class="welcome-image-container col-0 col-md-4">
           <img class="d-none d-md-block" src="./img/members/welcome.png" />
@@ -345,12 +352,12 @@
                     <div class="member-post">CEO, PRAYAS</div>
                     <br />
                     <div class="member-social-strip">
-                      <a href="mailto: nandana.kalam@gyws.org"><i class="fa fa-envelope"></i></a>
+                      <a href="mailto:nandana.kalam@gyws.org"><i class="fa fa-envelope"></i></a>
                       <a
-                        href="https://www.google.com/url?q=http://facebook.com/devakinandanakalam&sa=D&source=editors&ust=1621586810983000&usg=AFQjCNEw5Auz9Xkv9VQA672bCUfMX-dgiA"><i
+                        href="http://facebook.com/devakinandanakalam"><i
                           class="fa fa-facebook"></i></a>
                       <a
-                        href="https://www.google.com/url?q=http://linkedin.com/in/devakinandanakalam&sa=D&source=editors&ust=1621586810983000&usg=AFQjCNFgJHcx9TOhszXLoedwyyH-o85hHg"><i
+                        href="https://www.linkedin.com/in/devakinandanakalam"><i
                           class="fa fa-linkedin"></i></a>
                     </div>
                   </div>
