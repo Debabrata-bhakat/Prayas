@@ -44,7 +44,7 @@ h3 {
     .q {
         width: 500px;
         height: 380px;
-        margin: 120px auto 120px;
+        margin: 0;
         background-color: #fff;
         padding: 0 30px 30px;
         border-radius: 6px;
