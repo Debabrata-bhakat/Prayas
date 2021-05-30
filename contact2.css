@@ -1,0 +1,422 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+    font-family: 'Montserrat', Arial, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: #F2F3EB;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #5A5A5A;
+    font: inherit;
+    margin: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+textarea {
+    overflow: auto;
+}
+
+#container {
+    border: solid 3px #474544;
+    max-width: 768px;
+    margin: 60px auto;
+    position: relative;
+}
+
+form {
+    padding: 37.5px;
+    margin: 50px 0;
+}
+
+h1 {
+    color: #474544;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom: solid 2px #474544;
+    margin: -0.512em auto;
+    width: 80px;
+}
+
+.icon_wrapper {
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    fill: #474544;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+}
+
+.email {
+    float: right;
+    width: 45%;
+}
+
+input[type='text'],
+[type='email'],
+select,
+textarea {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #474544;
+    color: #474544;
+    font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0em 0 1.875em 0;
+    padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type='text']:focus,
+[type='email']:focus,
+textarea:focus {
+    outline: none;
+    padding: 0 0 0.875em 0;
+}
+
+.message {
+    float: none;
+}
+
+.name {
+    float: left;
+    width: 45%;
+}
+
+select {
+    background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.subject {
+    width: 100%;
+}
+
+.telephone {
+    width: 100%;
+}
+
+textarea {
+    line-height: 150%;
+    height: 150px;
+    resize: none;
+    width: 100%;
+}
+
+::-webkit-input-placeholder {
+    color: #474544;
+}
+
+:-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #474544;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #474544;
+}
+
+#form_button {
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#form_button:hover {
+    background: #474544;
+    color: #F2F3EB;
+}
+
+@media screen and (max-width: 768px) {
+    #container {
+        margin: 20px auto;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .underline {
+        width: 68px;
+    }
+
+    #form_button {
+        padding: 15px 25px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+        height: 35px;
+        width: 35px;
+    }
+
+    .underline {
+        width: 53px;
+    }
+
+    input[type='text'],
+    [type='email'],
+    select,
+    textarea {
+        font-size: 0.875em;
+    }
+}
+
+
+
+/* New profile card */
+/**** Sass Variables ****/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+}
+
+#pr_card .container {
+    max-width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#pr_card .card-wrapper {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+#pr_card .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 450px;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#pr_card .card .card-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+#pr_card .card:hover img {
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+#pr_card .card:hover .card-image {
+    transform: translateY(-100px);
+    transition: all 0.9s;
+}
+
+/**** Social Icons *****/
+#pr_card .social-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+}
+
+#pr_card .social-icons li {
+    list-style: none;
+}
+
+#pr_card .social-icons li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: 0.4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+#pr_card .card:hover .social-icons li a {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#pr_card .social-icons li a:hover {
+    background: #000;
+    transition: 0.2s;
+}
+
+#pr_card .social-icons li a:hover .fab {
+    color: #fff;
+}
+
+#pr_card .social-icons li a .fab {
+    transition: 0.8s;
+}
+
+#pr_card .social-icons li a .fab:hover {
+    transform: rotateY(360deg);
+    color: #fff;
+}
+
+#pr_card .card:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+#pr_card .card:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+#pr_card .card:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+#pr_card .card:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+/**** Personal Details ****/
+#pr_card .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
+}
+
+#pr_card .details h2 {
+    margin: 30px 0;
+    padding: 0;
+    text-align: center;
+}
+
+#pr_card .details h2 .job-title {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #333;
+    font-weight: 300;
+}
+
+#pr_card .jane {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    opacity: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 3;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+#pr_card .profile-two .social-icons li a {
+    border-radius: 50%;
+}
+
+#pr_card .card:hover .profile-img--two {
+    transform: rotateY(180deg);
+}
+
+#pr_card .card:hover .jane {
+    bottom: 0;
+    left: 0;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
