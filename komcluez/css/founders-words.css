@@ -1,9 +1,30 @@
   /*for words of ceo and founder */
+  .member-card-container {
+      margin: 15px auto;
+      display: flex;
+      float: unset;
+  }
+
+  @media (min-width: 1000px) {
+      .member-card-container {
+          float: left;
+      }
+      .founder-container {
+        display: flex;
+    }
+  }
+
+  .member-words {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
   .member-card {
       border-radius: 20px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      width: 36%;
-      margin: 10px 0;
+      padding: 20px 15px;
   }
 
   .member-card img {
