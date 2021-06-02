@@ -14,10 +14,12 @@ body {
 }
 
 .card-project {
-    margin: 2rem;
-    padding: 2rem;
+    /* margin: 2rem; */
+    /* padding: 2rem; */
     font-size: 1.7rem;
-
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 0;
 }
 
 
@@ -33,6 +35,8 @@ body {
     transition-property: color;
     transition-delay: 0.15s;
     box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card.hover {
