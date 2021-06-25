@@ -76,13 +76,9 @@ h1 {
     width: 50px;
 }
 
-.email {
-    float: right;
-    width: 45%;
-}
-
 input[type='text'],
-[type='email'],
+input[type='email'],
+input[type='tel'],
 select,
 textarea {
     background: none;
@@ -92,9 +88,7 @@ textarea {
     font-size: 1.000em;
     font-weight: 400;
     letter-spacing: 1px;
-    margin: 0em 0 1.875em 0;
-    padding: 0 0 0.875em 0;
-    text-transform: uppercase;
+    padding: 5px;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -109,19 +103,47 @@ textarea {
 }
 
 input[type='text']:focus,
-[type='email']:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
 textarea:focus {
     outline: none;
-    padding: 0 0 0.875em 0;
 }
 
-.message {
-    float: none;
+input[type='text'] ~ label,
+input[type='email'] ~ label,
+input[type='tel'] ~ label,
+select:empty ~ label {
+    color: #474544;
+    position: relative;
+    left: 0px;
+    bottom: 25px;
+    transition: all 0.3s ease-in-out;
 }
 
-.name {
-    float: left;
-    width: 45%;
+textarea ~ label {
+    color: #474544;
+    position: relative;
+    left: 0px;
+    bottom: 55px;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea:focus ~ label, textarea:not(:placeholder-shown) ~ label {
+    bottom: 85px;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label {
+    bottom: 55px;
+}
+
+input:invalid:not(:placeholder-shown) ~ label,
+textarea:invalid:not(:placeholder-shown) ~ label {
+    color: red;
+}
+
+.input {
+    margin: 0;
+    box-sizing: border-box;
 }
 
 select {
@@ -144,9 +166,7 @@ select::-ms-expand {
 }
 
 textarea {
-    line-height: 150%;
-    height: 150px;
-    resize: none;
+    resize: auto;
     width: 100%;
 }
 
@@ -228,7 +248,8 @@ textarea {
     }
 
     input[type='text'],
-    [type='email'],
+    input[type='email'],
+    input[type='tel']
     select,
     textarea {
         font-size: 0.875em;

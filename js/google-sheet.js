@@ -4,6 +4,8 @@ var request;
 // Bind to the submit event of our form
 $("#contact_form").submit(function(event){
 
+    $("#form-status").text('Sending...');
+
     // Abort any pending request
     if (request) {
         request.abort();
@@ -36,6 +38,7 @@ $("#contact_form").submit(function(event){
         console.log(response);
         console.log(textStatus);
         console.log(jqXHR);
+        $("#form-status").text('Submitted');
     });
 
     // Callback handler that will be called on failure
@@ -45,6 +48,7 @@ $("#contact_form").submit(function(event){
             "The following error occurred: "+
             textStatus, errorThrown
         );
+        $("#form-status").text('Error! Try after sometime');
     });
 
     // Callback handler that will be called regardless
